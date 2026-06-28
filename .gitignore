@@ -1,0 +1,10 @@
+*.o
+cpp_server/output.exe
+/data/commandsHistory.txt
+/data/movies.txt
+/server/node_modules/
+/server/package-lock.json
+c_cpp_properties.json
+node_modules
+package-lock.json
+server/config/.env.local

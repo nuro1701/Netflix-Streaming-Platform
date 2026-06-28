@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="200dp"
+    android:viewportWidth="200"
+    android:viewportHeight="200">
+
+    <!-- Circle -->
+    <path
+        android:fillColor="#888888"
+        android:pathData="M 100,0 A 100,100 0 1,0 100,200 A 100,100 0 1,0 100,0 Z"/>
+
+    <!-- Text (Placeholder) -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M 70,125 L 130,125 L 130,175 L 70,175 Z"/>
+
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M 80,140 L 120,140 L 120,160 L 80,160 Z"/>
+
+</vector>

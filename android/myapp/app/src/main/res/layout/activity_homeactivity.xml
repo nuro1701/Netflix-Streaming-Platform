@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/homebackground">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary" />
+
+        <TextView
+            android:id="@+id/appTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/mitkademflix3"
+            android:textColor="@color/bright_red"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp" />
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="12dp">
+
+                <!-- Favorites Section -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Favorites"
+                        android:textColor="#E7B393"
+                        android:textSize="30sp"
+                        android:layout_marginBottom="8dp" />
+
+                    <!-- HorizontalScrollView to allow horizontal scrolling -->
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <!-- Grid for Favorites inside HorizontalScrollView -->
+                        <GridLayout
+                            android:id="@+id/movieGridFavorites"
+                            android:columnCount="10"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            >
+                        </GridLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
+
+
+        <!-- Recommended Section -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Recommended"
+                        android:textColor="#D6A6DC"
+                        android:textSize="30sp"
+                        android:layout_marginBottom="8dp" />
+
+                    <!-- Grid for Recommended -->
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <!-- Grid for Favorites inside HorizontalScrollView -->
+                        <GridLayout
+                            android:id="@+id/movieGridRecommended"
+                            android:columnCount="10"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            >
+                        </GridLayout>
+                    </HorizontalScrollView>
+                </LinearLayout>
+
+                <!-- Category 1 Section -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Category 1"
+                        android:textColor="#ACEBE3"
+                        android:textSize="30sp"
+                        android:layout_marginBottom="8dp" />
+
+                    <!-- Grid for Category 1 -->
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <!-- Grid for Favorites inside HorizontalScrollView -->
+                        <GridLayout
+                            android:id="@+id/movieGridCategory1"
+                            android:columnCount="10"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            >
+                        </GridLayout>
+                    </HorizontalScrollView>
+
+
+                </LinearLayout>
+
+                <!-- Category 2 Section (if needed) -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Category 2"
+                        android:textColor="#81C87A"
+                        android:textSize="30sp"
+                        android:layout_marginBottom="8dp" />
+
+                    <!-- Grid for Category 2 -->
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <!-- Grid for Favorites inside HorizontalScrollView -->
+                        <GridLayout
+                            android:id="@+id/movieGridCategory2"
+                            android:columnCount="10"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            >
+                        </GridLayout>
+                    </HorizontalScrollView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/navigationMenu"
+        android:layout_width="280dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="#EB787070" />
+
+</androidx.drawerlayout.widget.DrawerLayout>

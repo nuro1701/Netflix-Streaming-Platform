@@ -1,0 +1,94 @@
+.management-screen {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    padding: 40px;
+    color: #333;
+}
+
+.management-screen h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #444;
+}
+
+.management-screen section {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.management-screen h2 {
+    border-bottom: 2px solid #e50914;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    color: #e50914;
+}
+
+.management-screen div {
+    margin-bottom: 20px;
+}
+
+.management-screen input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.management-screen button {
+    background-color: #e50914;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.management-screen button:hover {
+    background-color: #d40813;
+}
+
+.management-screen .category-list,
+.management-screen .movie-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.management-screen .category-item,
+.management-screen .movie-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.management-screen .category-item p,
+.management-screen .movie-item p {
+    margin: 0;
+}
+
+.management-screen .category-item button,
+.management-screen .movie-item button {
+    padding: 5px 10px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.management-screen .category-item button:hover,
+.management-screen .movie-item button:hover {
+    background-color: #d32f2f;
+}
+
+.nav-bar {
+    padding: 20px;
+}

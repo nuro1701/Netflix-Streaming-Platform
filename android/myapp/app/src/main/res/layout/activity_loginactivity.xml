@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="@drawable/loginbackground">
+
+    <TextView
+        android:id="@+id/appTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MitkademFlix"
+        android:textColor="#F8F8F8"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="8dp"
+        android:shadowColor="#D3642E"
+        android:shadowDx="5"
+        android:shadowDy="5"
+        android:shadowRadius="9.0" />
+
+    <EditText
+        android:id="@+id/usernameInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:background="#DE4B4848"
+        android:hint="Email"
+        android:padding="5dp"
+        android:textSize="30sp"
+        android:textColor="#F6F6F6"
+        android:textColorHint="#FFFDFD" />
+
+    <EditText
+        android:id="@+id/passwordInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="19dp"
+        android:background="?android:attr/panelFullBackground"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="5dp"
+        android:textSize="28sp"
+        android:minHeight="32dp"
+        android:textColor="@color/white"
+        android:textColorHint="#FFFFFF" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/loginButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#3F2ED5"
+            android:padding="5dp"
+            android:text="Log In"
+            android:textColor="#FFFFFF"
+            android:textSize="32sp" />
+
+        <Button
+            android:id="@+id/signupButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:background="#A2FD6F2D"
+            android:padding="3dp"
+            android:text="New? Sign Up"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

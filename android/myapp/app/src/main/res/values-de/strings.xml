@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MitkademFlix</string>
+    <string name="foo">Großartig</string>
+    <string name="bar">Hervorragend</string>
+    <string name="foobar">Atemberaubend!</string>
+    <string name="greeting" translatable="false">Hallo, Cooler Entdecker!</string>
+</resources>

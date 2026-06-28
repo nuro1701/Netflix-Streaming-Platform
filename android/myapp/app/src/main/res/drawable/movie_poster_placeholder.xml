@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="120dp"
+    android:height="180dp"
+    android:viewportWidth="120"
+    android:viewportHeight="180">
+
+    <!-- Gradient Background -->
+    <path
+        android:pathData="M0,0h120v180h-120z">
+        <gradient
+            android:startX="0"
+            android:startY="0"
+            android:endX="120"
+            android:endY="180"
+            android:type="linear"
+            android:startColor="#8B2AB4"
+            android:endColor="#4D293AE7" />
+    </path>
+
+    <!-- Inner Shadow -->
+    <path
+        android:pathData="M0,0h120v180h-120z"
+        android:fillColor="#000000"
+        android:fillAlpha="0.15" />
+
+    <!-- Placeholder Icon -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M60,40c-8.84,0 -16,7.16 -16,16v8h-8c-4.42,0 -8,3.58 -8,8v60c0,4.42 3.58,8 8,8h80c4.42,0 8,-3.58 8,-8v-60c0,-4.42 -3.58,-8 -8,-8h-8v-8c0,-8.84 -7.16,-16 -16,-16h-16zM60,72c13.25,0 24,10.75 24,24s-10.75,24 -24,24 -24,-10.75 -24,-24 10.75,-24 24,-24zM60,80c-8.84,0 -16,7.16 -16,16s7.16,16 16,16 16,-7.16 16,-16 -7.16,-16 -16,-16z" />
+</vector>
